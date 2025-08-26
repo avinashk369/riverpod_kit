@@ -1,9 +1,11 @@
+import 'package:dio/dio.dart';
 import 'package:riverpod_kit/features/cc_arch/data/data_source/user_remote_data_source_impl.dart';
 import 'package:riverpod_kit/features/cc_arch/data/repositories/user_repositories_impl.dart';
 import 'package:riverpod_kit/features/cc_arch/domain/entities/user_entity.dart';
 import 'package:riverpod_kit/features/cc_arch/domain/usecases/get_user.dart';
 import 'package:riverpod_kit/features/cc_arch/domain/usecases/get_user_params.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+part 'user_provider.g.dart';
 
 @riverpod
 class UserNotifier extends _$UserNotifier {

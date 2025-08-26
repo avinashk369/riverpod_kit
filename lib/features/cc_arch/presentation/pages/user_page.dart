@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_kit/core/errors/network_failure.dart';
 import 'package:riverpod_kit/core/errors/server_failure.dart';
+import 'package:riverpod_kit/features/cc_arch/presentation/providers/user_provider.dart';
 
 class UserPage extends ConsumerWidget {
   final int userId;
-  const UserPage({Key? key, required this.userId}) : super(key: key);
+  const UserPage({super.key, required this.userId});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

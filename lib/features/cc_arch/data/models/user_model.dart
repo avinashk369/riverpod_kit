@@ -1,3 +1,5 @@
+import 'package:riverpod_kit/features/cc_arch/domain/entities/user_entity.dart';
+
 class UserModel extends UserEntity {
   const UserModel({
     required int id,

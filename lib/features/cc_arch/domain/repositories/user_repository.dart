@@ -1,3 +1,4 @@
+import 'package:dartz/dartz.dart';
 import 'package:riverpod_kit/core/errors/failure.dart';
 import 'package:riverpod_kit/features/cc_arch/domain/entities/user_entity.dart';
 

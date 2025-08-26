@@ -1,3 +1,4 @@
+import 'package:dartz/dartz.dart';
 import 'package:riverpod_kit/core/errors/failure.dart';
 import 'package:riverpod_kit/core/errors/network_failure.dart';
 import 'package:riverpod_kit/core/errors/server_failure.dart';
@@ -19,7 +20,7 @@ class UserRepositoryImpl implements UserRepository {
     } on ServerException catch (e) {
       return Left(ServerFailure(message: e.message));
     } on NetworkException {
-      return const Left(NetworkFailure());
+      return Left(NetworkFailure());
     }
   }
 }

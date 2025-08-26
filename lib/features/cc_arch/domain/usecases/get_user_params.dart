@@ -1,3 +1,5 @@
+import 'package:equatable/equatable.dart';
+
 class GetUserParams extends Equatable {
   final int userId;
   const GetUserParams({required this.userId});

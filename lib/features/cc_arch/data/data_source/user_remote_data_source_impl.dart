@@ -1,7 +1,8 @@
+import 'package:dio/dio.dart';
 import 'package:riverpod_kit/core/exceptions/network_exception.dart';
 import 'package:riverpod_kit/core/exceptions/server_exception.dart';
-import 'package:riverpod_kit/features/auth/data/model/user_model.dart';
 import 'package:riverpod_kit/features/cc_arch/data/data_source/user_remote_data_source.dart';
+import 'package:riverpod_kit/features/cc_arch/data/models/user_model.dart';
 
 class UserRemoteDataSourceImpl implements UserRemoteDataSource {
   final Dio dio;
