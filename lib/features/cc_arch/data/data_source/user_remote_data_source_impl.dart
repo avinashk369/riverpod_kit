@@ -10,11 +10,11 @@ class UserRemoteDataSourceImpl implements UserRemoteDataSource {
 
   @override
   Future<UserModel> getUser(int userId) async {
-    final url = 'https://jsonplaceholder.typicode.com/users/$userId';
+    final url = 'https://fake-json-api.mock.beeceptor.com/users';
     try {
       final response = await dio.get(url);
       if (response.statusCode == 200) {
-        return UserModel.fromJson(response.data as Map<String, dynamic>);
+        return UserModel.fromJson(response.data[0] as Map<String, dynamic>);
       } else {
         throw ServerException(message: 'Failed to load user.');
       }

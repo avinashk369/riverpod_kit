@@ -13,4 +13,8 @@ class GetUser implements UseCase<UserEntity, GetUserParams> {
   Future<Either<Failure, UserEntity>> call(GetUserParams params) async {
     return await repository.getUser(params.userId);
   }
+
+  Future<Either<Failure, UserEntity>> called(GetUserParams params) async {
+    return await repository.getUser(params.userId);
+  }
 }
